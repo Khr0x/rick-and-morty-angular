@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Rick and Morty Dark Theme */
+:root {
+  /* Primary Colors */
+  --portal-green: #44af69;
+  --portal-blue: #00b8d4;
+  --science-green: #97ce4c;
+  --portal-glow: #00ffcc;
+  
+  /* Accent Colors */
+  --rick-blue: #5bc0eb;
+  --morty-yellow: #ffc107;
+  --toxic-pink: #ff006e;
+  --dimension-purple: #9d4edd;
+  
+  /* Background Colors */
+  --bg-space: #0f0e17;
+  --bg-dark: #1a1a2e;
+  --bg-card: #252542;
+  --bg-hover: #2d2d4a;
+  
+  /* Text Colors */
+  --text-primary: #edf2f4;
+  --text-secondary: #a7a9be;
+  --text-muted: #6e7491;
+  
+  /* Border Colors */
+  --border-default: #3d3d5c;
+  --border-accent: var(--portal-green);
+}
+
+body {
+  background-color: var(--bg-space);
+  color: var(--text-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--portal-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--science-green);
+}
